@@ -1,0 +1,230 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #EEEEEE; /* Light Grey Background */
+}
+
+/* Container for consistent page layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    background-color: #222831; /* Dark Grey Header */
+    color: #EEEEEE; /* Light Grey text for contrast */
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold; /* Font weight */
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Main search section */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align */
+    background-color: #393E46; /* Medium Grey for section */
+    padding: 40px; /* Padding around the search container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* More rounded */
+    width: 200px;
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.search-bar:focus {
+    border-color: #00ADB5; /* Highlighted border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Search button styling */
+.search-button {
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00ADB5; /* Teal Color */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #009B9F; /* Darker shade on hover */
+}
+
+.search-button:focus {
+    outline: 3px solid #009B9F; /* Highlighted outline */
+}
+
+/* Available hotels section */
+.section {
+    padding: 40px 20px;
+}
+
+.cities-container,
+.hotels-container,
+.transportation-container,
+.attractions-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+}
+
+/* Card styling for cities, hotels, transportation, and attractions */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #393E46; /* Medium Grey for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+.card img {
+    width: 100%; /* Make the image full width of the card */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.card h3 {
+    padding: 10px;
+    background-color: #222831; /* Dark Grey for card title */
+    color: #EEEEEE; /* Light Grey text for contrast */
+    text-align: center;
+    font-weight: bold; /* Font weight for card titles */
+}
+
+.card p {
+    padding: 0 10px 10px;
+    color: #EEEEEE; /* Light Grey for text */
+    text-align: center;
+}
+
+/* Hover effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #222831; /* Dark Grey for footer */
+    color: #EEEEEE; /* Light Grey text for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Chatbot styling */
+.chat-container {
+    position: absolute; /* Make it draggable */
+    bottom: 30px; /* Adjusted position */
+    right: 30px; /* Adjusted position */
+    width: 350px; /* Slightly wider */
+    max-height: 400px; /* Limit height */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #393E46; /* Medium Grey for chatbot */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.chat-header {
+    background-color: #222831; /* Dark Grey Header for chatbot */
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 300px; /* Fixed height */
+    overflow-y: auto; /* Scroll when too many messages */
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#chatInput {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#chatSendButton {
+    background-color: #00ADB5; /* Teal for chatbot button */
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#chatSendButton:hover {
+    background-color: #009B9F; /* Darker shade on hover */
+}
+
+/* Chat messages styling */
+.user-message {
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #E0F7FA; /* Light background for user messages */
+    border-radius: 10px;
+}
+
+.bot-message {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #F1F8E9; /* Light background for bot messages */
+    border-radius: 10px;
+}

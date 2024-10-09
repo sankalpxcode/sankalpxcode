@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Find Your Perfect Stay</h1>
+            <p>Discover the best hotels, attractions, and restaurants.</p>
+        </div>
+    </header>
+
+    <!-- Main Search Section -->
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city" class="search-bar">
+                <input type="date" id="checkInDate" class="search-bar" placeholder="Check-in Date">
+                <input type="date" id="checkOutDate" class="search-bar" placeholder="Check-out Date">
+                <input type="number" id="guests" placeholder="No. of Guests" class="search-bar">
+                <button onclick="searchHotels()" class="search-button">Search Hotels</button>
+            </div>
+            <div id="searchError" style="display:none; color:red; margin-top: 10px;"></div>
+        </section>
+
+        <!-- Popular Cities Section -->
+        <section id="citiesSection" class="section">
+            <h2>Popular Cities</h2>
+            <div id="citiesContainer" class="cities-container"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Travel Planner. All rights reserved.</p>
+    </footer>
+<!-- Chatbot container -->
+
+    
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="chatgpt_chatbot.js"></script>
+    <script src="//code.tidio.co/u8ayptldpkh9pazaukxygvw5upbjsgkl.js" async></script>
+</body>
+</html>
