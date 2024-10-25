@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>TRAVEL TREK !</h1>
+        </div>
+    </header>
+
+    <!-- Main Search Section -->
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city" class="search-bar">
+                <input type="date" id="checkInDate" class="search-bar" placeholder="Check-in Date">
+                <input type="date" id="checkOutDate" class="search-bar" placeholder="Check-out Date">
+                <input type="number" id="guests" placeholder="No. of Guests" class="search-bar">
+                <button onclick="searchHotels()" class="search-button">Search Hotels</button>
+                
+            </div>
+            <div id="searchError" style="display:none; color:red; margin-top: 10px;"></div>
+        </section>
+
+        <!-- Popular Cities Section -->
+        <section id="citiesSection" class="section">
+            <h3>"India is a land of diversity, where every journey tells a different story."</h3>
+            <h2>CITIES OF YOUR DREAM</h2>
+            <div id="citiesContainer" class="cities-container"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Made with Love. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot container -->
+    <div class="chat-container">
+        <div class="chat-header">Chat with Us</div>
+        <div id="chatBox" class="chat-box"></div>
+        <div class="chat-input-container">
+            <input id="chatInput" type="text" placeholder="Type your message">
+            <button id="chatSendButton">Send</button>
+        </div>
+        
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="chatgpt_chatbot.js"></script>
+    <script src="chatgpt_chatbot.js"></script>
+</body>
+</html>
